@@ -13,6 +13,8 @@
 		E66CB8561B3B0D7500BF0231 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66CB8551B3B0D7500BF0231 /* Images.xcassets */; };
 		E66CB8591B3B0D7500BF0231 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66CB8571B3B0D7500BF0231 /* LaunchScreen.xib */; };
 		E66CB8651B3B0D7500BF0231 /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66CB8641B3B0D7500BF0231 /* StormyTests.swift */; };
+		E66CB8711B3B0FD900BF0231 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = E66CB8701B3B0FD900BF0231 /* CurrentWeather.plist */; };
+		E66CB8731B3B106000BF0231 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66CB8721B3B106000BF0231 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 		E66CB85E1B3B0D7500BF0231 /* StormyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66CB8631B3B0D7500BF0231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E66CB8641B3B0D7500BF0231 /* StormyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyTests.swift; sourceTree = "<group>"; };
+		E66CB8701B3B0FD900BF0231 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CurrentWeather.plist; path = ../../../../Desktop/CurrentWeather.plist; sourceTree = "<group>"; };
+		E66CB8721B3B106000BF0231 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		E66CB8741B3B157900BF0231 /* scratchPad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = scratchPad.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +84,12 @@
 			children = (
 				E66CB84E1B3B0D7500BF0231 /* AppDelegate.swift */,
 				E66CB8501B3B0D7500BF0231 /* ViewController.swift */,
+				E66CB8721B3B106000BF0231 /* CurrentWeather.swift */,
 				E66CB8521B3B0D7500BF0231 /* Main.storyboard */,
 				E66CB8551B3B0D7500BF0231 /* Images.xcassets */,
 				E66CB8571B3B0D7500BF0231 /* LaunchScreen.xib */,
 				E66CB84C1B3B0D7500BF0231 /* Supporting Files */,
+				E66CB8741B3B157900BF0231 /* scratchPad.playground */,
 			);
 			path = Stormy;
 			sourceTree = "<group>";
@@ -90,6 +97,7 @@
 		E66CB84C1B3B0D7500BF0231 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E66CB8701B3B0FD900BF0231 /* CurrentWeather.plist */,
 				E66CB84D1B3B0D7500BF0231 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E66CB8541B3B0D7500BF0231 /* Main.storyboard in Resources */,
+				E66CB8711B3B0FD900BF0231 /* CurrentWeather.plist in Resources */,
 				E66CB8591B3B0D7500BF0231 /* LaunchScreen.xib in Resources */,
 				E66CB8561B3B0D7500BF0231 /* Images.xcassets in Resources */,
 			);
@@ -213,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E66CB8511B3B0D7500BF0231 /* ViewController.swift in Sources */,
+				E66CB8731B3B106000BF0231 /* CurrentWeather.swift in Sources */,
 				E66CB84F1B3B0D7500BF0231 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
