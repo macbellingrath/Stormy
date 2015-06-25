@@ -46,29 +46,87 @@
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="WFM-A6-H9T">
+                                <rect key="frame" x="190" y="108" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="76m-Ov-c8J"/>
+                                    <constraint firstAttribute="width" constant="60" id="JuU-S2-0WB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcatraz Island, CA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1J-B3-T6M">
+                                <rect key="frame" x="258" y="126" width="163" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrS-Ei-KjC">
+                                <rect key="frame" x="256" y="534" width="88" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-rf-F80">
+                                <rect key="frame" x="279" y="50" width="43" height="43"/>
+                                <state key="normal" image="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshWeather" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cT4-h0-ufs"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" clearsContextBeforeDrawing="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="E8H-ep-2ul">
+                                <rect key="frame" x="282" y="53" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.48627450980392156" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="E8H-ep-2ul" firstAttribute="centerY" secondItem="u6a-rf-F80" secondAttribute="centerY" constant="0.5" id="1M4-ot-y1v"/>
+                            <constraint firstItem="L1J-B3-T6M" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="RNr-oG-aNE" secondAttribute="bottom" constant="-243" id="1av-6f-AcO"/>
                             <constraint firstAttribute="centerY" secondItem="RNr-oG-aNE" secondAttribute="centerY" id="4Q0-mK-1By"/>
+                            <constraint firstAttribute="centerX" secondItem="WFM-A6-H9T" secondAttribute="centerX" constant="80" id="4du-WL-jiy"/>
                             <constraint firstItem="3UE-yD-YZu" firstAttribute="top" secondItem="27G-Ub-5GT" secondAttribute="bottom" constant="9" id="AHj-C0-Ubn"/>
+                            <constraint firstItem="L1J-B3-T6M" firstAttribute="leading" secondItem="WFM-A6-H9T" secondAttribute="trailing" constant="8" id="Cy5-ar-Zlg"/>
                             <constraint firstItem="3UE-yD-YZu" firstAttribute="centerX" secondItem="27G-Ub-5GT" secondAttribute="centerX" constant="0.5" id="HUq-Z4-Ovq"/>
+                            <constraint firstItem="E8H-ep-2ul" firstAttribute="centerX" secondItem="u6a-rf-F80" secondAttribute="centerX" constant="-0.5" id="K4y-72-Qkr"/>
                             <constraint firstAttribute="centerX" secondItem="RNr-oG-aNE" secondAttribute="centerX" id="Q6Y-my-Tu0"/>
                             <constraint firstAttribute="centerX" secondItem="axm-fP-m6q" secondAttribute="centerX" constant="-75" id="T4S-Y4-ip2"/>
                             <constraint firstAttribute="centerX" secondItem="27G-Ub-5GT" secondAttribute="centerX" constant="65" id="URA-9N-gxV"/>
+                            <constraint firstAttribute="centerX" secondItem="HrS-Ei-KjC" secondAttribute="centerX" id="VK9-kd-SLF"/>
+                            <constraint firstItem="L1J-B3-T6M" firstAttribute="top" relation="greaterThanOrEqual" secondItem="u6a-rf-F80" secondAttribute="bottom" priority="750" constant="8" symbolic="YES" id="YHc-zX-2uC"/>
                             <constraint firstItem="Nh5-mH-wfB" firstAttribute="top" secondItem="axm-fP-m6q" secondAttribute="bottom" constant="9" id="YhZ-iR-91p"/>
+                            <constraint firstAttribute="centerX" secondItem="u6a-rf-F80" secondAttribute="centerX" id="d8T-dn-a2B"/>
+                            <constraint firstItem="u6a-rf-F80" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="dsu-hp-YoC"/>
                             <constraint firstItem="axm-fP-m6q" firstAttribute="top" secondItem="RNr-oG-aNE" secondAttribute="bottom" constant="7" id="gcs-qR-wIB"/>
                             <constraint firstItem="Nh5-mH-wfB" firstAttribute="centerX" secondItem="axm-fP-m6q" secondAttribute="centerX" constant="5" id="gob-aj-CeB"/>
                             <constraint firstItem="27G-Ub-5GT" firstAttribute="top" secondItem="RNr-oG-aNE" secondAttribute="bottom" constant="7" id="nPV-G1-cF4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="HrS-Ei-KjC" secondAttribute="bottom" priority="750" constant="40" id="u05-99-Yk2"/>
+                            <constraint firstItem="L1J-B3-T6M" firstAttribute="top" secondItem="u6a-rf-F80" secondAttribute="bottom" constant="33" id="uHJ-UP-YTf"/>
+                            <constraint firstItem="WFM-A6-H9T" firstAttribute="top" secondItem="u6a-rf-F80" secondAttribute="bottom" constant="15" id="w5r-hz-id7"/>
+                            <constraint firstItem="HrS-Ei-KjC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3UE-yD-YZu" secondAttribute="bottom" constant="30" id="xeV-o1-ylT"/>
+                            <constraint firstItem="RNr-oG-aNE" firstAttribute="top" relation="lessThanOrEqual" secondItem="WFM-A6-H9T" secondAttribute="bottom" constant="38" id="zHY-Vx-n7s"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YHc-zX-2uC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="E8H-ep-2ul" id="gAO-I6-cVb"/>
                         <outlet property="currentHumidityLabel" destination="3UE-yD-YZu" id="8m1-uP-efM"/>
                         <outlet property="currentPrecipitationLabel" destination="Nh5-mH-wfB" id="x1n-FV-gRB"/>
                         <outlet property="currentTemperatureLabel" destination="RNr-oG-aNE" id="f8X-8R-Jda"/>
+                        <outlet property="currentWeatherIcon" destination="WFM-A6-H9T" id="QRt-83-C2g"/>
+                        <outlet property="currentWeatherSummary" destination="HrS-Ei-KjC" id="iGk-t2-Xuc"/>
+                        <outlet property="refreshButton" destination="u6a-rf-F80" id="Iob-QJ-8qc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="default" width="30" height="30"/>
+        <image name="refresh" width="43" height="43"/>
+    </resources>
 </document>
