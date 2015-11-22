@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E61BE6321B3ED49700739939 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = E61BE6311B3ED49700739939 /* CurrentWeather.plist */; };
+		E61BE6361B3ED4FF00739939 /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE6351B3ED4FF00739939 /* Locator.swift */; };
+		E61BE6381B3ED5A400739939 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61BE6371B3ED5A400739939 /* MapKit.framework */; };
+		E61BE63A1B3ED5AD00739939 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61BE6391B3ED5AD00739939 /* CoreLocation.framework */; };
 		E66CB84F1B3B0D7500BF0231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66CB84E1B3B0D7500BF0231 /* AppDelegate.swift */; };
 		E66CB8511B3B0D7500BF0231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66CB8501B3B0D7500BF0231 /* ViewController.swift */; };
 		E66CB8541B3B0D7500BF0231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66CB8521B3B0D7500BF0231 /* Main.storyboard */; };
 		E66CB8561B3B0D7500BF0231 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66CB8551B3B0D7500BF0231 /* Images.xcassets */; };
 		E66CB8591B3B0D7500BF0231 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66CB8571B3B0D7500BF0231 /* LaunchScreen.xib */; };
 		E66CB8651B3B0D7500BF0231 /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66CB8641B3B0D7500BF0231 /* StormyTests.swift */; };
-		E66CB8711B3B0FD900BF0231 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = E66CB8701B3B0FD900BF0231 /* CurrentWeather.plist */; };
 		E66CB8731B3B106000BF0231 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66CB8721B3B106000BF0231 /* CurrentWeather.swift */; };
+		E6DA37241B684C16004DDA00 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DA37231B684C16004DDA00 /* SwiftyJSON.swift */; };
 		E6DDA18A1B3C52DF00003FEB /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA1891B3C52DF00003FEB /* NetworkOperation.swift */; };
 		E6DDA18C1B3C52FB00003FEB /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA18B1B3C52FB00003FEB /* ForecastService.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E61BE6311B3ED49700739939 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		E61BE6351B3ED4FF00739939 /* Locator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locator.swift; path = ../Locator.swift; sourceTree = "<group>"; };
+		E61BE6371B3ED5A400739939 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E61BE6391B3ED5AD00739939 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E66CB8491B3B0D7500BF0231 /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66CB84D1B3B0D7500BF0231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E66CB84E1B3B0D7500BF0231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,9 +48,9 @@
 		E66CB85E1B3B0D7500BF0231 /* StormyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66CB8631B3B0D7500BF0231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E66CB8641B3B0D7500BF0231 /* StormyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyTests.swift; sourceTree = "<group>"; };
-		E66CB8701B3B0FD900BF0231 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CurrentWeather.plist; path = ../../../../Desktop/CurrentWeather.plist; sourceTree = "<group>"; };
 		E66CB8721B3B106000BF0231 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		E66CB8741B3B157900BF0231 /* scratchPad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = scratchPad.playground; sourceTree = "<group>"; };
+		E6DA37231B684C16004DDA00 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E6DDA1891B3C52DF00003FEB /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		E6DDA18B1B3C52FB00003FEB /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61BE63A1B3ED5AD00739939 /* CoreLocation.framework in Frameworks */,
+				E61BE6381B3ED5A400739939 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,8 @@
 		E66CB8401B3B0D7500BF0231 = {
 			isa = PBXGroup;
 			children = (
+				E61BE6391B3ED5AD00739939 /* CoreLocation.framework */,
+				E61BE6371B3ED5A400739939 /* MapKit.framework */,
 				E66CB84B1B3B0D7500BF0231 /* Stormy */,
 				E66CB8611B3B0D7500BF0231 /* StormyTests */,
 				E66CB84A1B3B0D7500BF0231 /* Products */,
@@ -87,10 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				E66CB84E1B3B0D7500BF0231 /* AppDelegate.swift */,
-				E66CB8501B3B0D7500BF0231 /* ViewController.swift */,
 				E66CB8721B3B106000BF0231 /* CurrentWeather.swift */,
-				E6DDA1891B3C52DF00003FEB /* NetworkOperation.swift */,
 				E6DDA18B1B3C52FB00003FEB /* ForecastService.swift */,
+				E61BE6351B3ED4FF00739939 /* Locator.swift */,
+				E6DA37231B684C16004DDA00 /* SwiftyJSON.swift */,
+				E6DDA1891B3C52DF00003FEB /* NetworkOperation.swift */,
+				E66CB8501B3B0D7500BF0231 /* ViewController.swift */,
 				E66CB8521B3B0D7500BF0231 /* Main.storyboard */,
 				E66CB8551B3B0D7500BF0231 /* Images.xcassets */,
 				E66CB8571B3B0D7500BF0231 /* LaunchScreen.xib */,
@@ -103,7 +117,7 @@
 		E66CB84C1B3B0D7500BF0231 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E66CB8701B3B0FD900BF0231 /* CurrentWeather.plist */,
+				E61BE6311B3ED49700739939 /* CurrentWeather.plist */,
 				E66CB84D1B3B0D7500BF0231 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -170,11 +184,13 @@
 		E66CB8411B3B0D7500BF0231 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = com.mbellingrath;
 				TargetAttributes = {
 					E66CB8481B3B0D7500BF0231 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = F7WJD6355G;
 					};
 					E66CB85D1B3B0D7500BF0231 = {
 						CreatedOnToolsVersion = 6.3;
@@ -207,7 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E66CB8541B3B0D7500BF0231 /* Main.storyboard in Resources */,
-				E66CB8711B3B0FD900BF0231 /* CurrentWeather.plist in Resources */,
+				E61BE6321B3ED49700739939 /* CurrentWeather.plist in Resources */,
 				E66CB8591B3B0D7500BF0231 /* LaunchScreen.xib in Resources */,
 				E66CB8561B3B0D7500BF0231 /* Images.xcassets in Resources */,
 			);
@@ -229,8 +245,10 @@
 			files = (
 				E6DDA18A1B3C52DF00003FEB /* NetworkOperation.swift in Sources */,
 				E66CB8511B3B0D7500BF0231 /* ViewController.swift in Sources */,
+				E61BE6361B3ED4FF00739939 /* Locator.swift in Sources */,
 				E66CB8731B3B106000BF0231 /* CurrentWeather.swift in Sources */,
 				E6DDA18C1B3C52FB00003FEB /* ForecastService.swift in Sources */,
+				E6DA37241B684C16004DDA00 /* SwiftyJSON.swift in Sources */,
 				E66CB84F1B3B0D7500BF0231 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,9 +376,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Stormy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -368,9 +389,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Stormy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -30,6 +30,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Stormy Would Like to Access Your Location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Stormy needs your location to provide nearby weather information.</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

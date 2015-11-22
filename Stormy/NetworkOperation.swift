@@ -11,6 +11,8 @@ import Foundation
 
 class NetworkOperation {
     
+    var objects = [[String:String]]()
+    
     lazy var config: NSURLSessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration()
     lazy var session: NSURLSession = NSURLSession(configuration: self.config)
     let queryURL: NSURL
@@ -29,19 +31,22 @@ class NetworkOperation {
             
             // 1. Check HTTP response for successful GET request
             if let httpResponse = response as? NSHTTPURLResponse {
-                switch httpResponse.statusCode {
+                switch(httpResponse.statusCode) {
                 case 200:
                     // 2. Create JSON object with data
-                    let jsonDictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as? [String: AnyObject]
+                    let jsonDictionary = try! NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String: AnyObject]
                     completion(jsonDictionary)
                 default:
-                    println("GET request not successful. HTTP status code: \(httpResponse.statusCode)")
+                    print("GET request not successful. HTTP status code: \(httpResponse.statusCode)")
                 }
             } else {
-                println("Error: Not a valid HTTP response")
+                print("Error: Not a valid HTTP response")
             }
+            
         }
         
-        dataTask.resume()
+        dataTask!.resume()
     }
 }
+
+

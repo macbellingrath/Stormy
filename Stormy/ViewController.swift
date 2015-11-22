@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var currentHumidityLabel: UILabel?
     @IBOutlet weak var currentPrecipitationLabel: UILabel?
@@ -17,6 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentWeatherSummary: UILabel?
     @IBOutlet weak var refreshButton: UIButton?
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
+    
+    var locationManager: CLLocationManager!
+    
     
     // Location coordinates
     let coordinate: (lat: Double, lon: Double) = (37.8267,-122.423)
@@ -27,7 +32,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         retrieveWeatherForecast()
+        locationManager = CLLocationManager ()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+
         
         
     }
@@ -77,6 +88,7 @@ class ViewController: UIViewController {
     @IBAction func refreshWeather() {
         toggleRefreshAnimation(true)
         retrieveWeatherForecast()
+        locationManager.startUpdatingLocation()
         
     }
     
