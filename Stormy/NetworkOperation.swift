@@ -45,7 +45,7 @@ class NetworkOperation {
             
         }
         
-        dataTask!.resume()
+        dataTask.resume()
     }
 }
 
